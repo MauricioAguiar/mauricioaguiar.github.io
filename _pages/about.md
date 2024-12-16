@@ -2,30 +2,25 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Address. Contacts. Motto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: me_pic_lilac.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>(51) 98131-3987</p>
+    <p>Recife, Pernambuco</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Me formei no curso de análise de sistemas, durante minha jornada estudei bastante de Back-end, Gestão de Banco de dados, Análise de dados, assim como projetei soluções de software para problemas específicos, para tal, fiz bom uso das linguagens como Java, Python, algumas linguagens de Query estruturais, além de estudar prática de métodos para projetar um sistema, como diagramação de classes, modelagem de dados e definição de uma arquitetura adequada. 
+Sou formado em Análise de Sistemas, com sólida experiência em Back-end, Gestão de Bancos de Dados e Análise de Dados. Durante minha trajetória, projetei soluções de software para problemas específicos, utilizando linguagens como Java, Python e ferramentas de consulta estruturada (SQL). Além disso, domino práticas essenciais para o desenvolvimento de sistemas, incluindo diagramação de classes, modelagem de dados e definição de arquiteturas escaláveis e eficientes.
 
-Neste percurso participei de um projeto que consistia em criar um sistema de gerenciamento de equipes ágeis de desenvolvimento e para tal, durante toda fase (da idealização ao desenvolvimento) utilizamos do método ágil, mais especificamente SCRUM e Kanban, chegando a gerar uma publicação de artigo para o mesmo.
+Um dos destaques da minha trajetória foi a participação em um projeto desafiador de criação de um sistema para gerenciamento de equipes ágeis de desenvolvimento. Desde a concepção até a entrega, adotamos metodologias ágeis como SCRUM e Kanban, o que culminou na publicação de um artigo científico sobre o projeto.
 
-Meus maiores interesses e paixões despertados até o momento é muito que se relaciona a dados, principalmente Machine Learning, Data Science e Business Intelligence.
+Nos últimos anos, desenvolvi uma paixão pela área de Ciência de Dados, onde tenho me dedicado a criar projetos práticos disponíveis no meu [GitHub](https://github.com/MauricioAguiar). Nesses projetos, utilizei tecnologias como PySpark para processamento de grandes volumes de dados, TensorFlow para construção de modelos de Machine Learning e Matplotlib para visualização de dados. Essas experiências me permitiram explorar todo o ciclo de vida dos dados, desde a coleta e limpeza até a análise e aplicação de algoritmos preditivos.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
-
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Atualmente estou em busca de oportunidades na área de Ciência de Dados, com foco em Machine Learning, Data Science e Business Intelligence. Meu objetivo é contribuir com soluções inovadoras e impactantes, aproveitando minha experiência prática e o conhecimento adquirido em projetos e tecnologias de ponta.
