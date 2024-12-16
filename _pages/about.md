@@ -18,6 +18,12 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
+Me formei no curso de análise de sistemas, durante minha jornada estudei bastante de Back-end, Gestão de Banco de dados, Análise de dados, assim como projetei soluções de software para problemas específicos, para tal, fiz bom uso das linguagens como Java, Python, algumas linguagens de Query estruturais, além de estudar prática de métodos para projetar um sistema, como diagramação de classes, modelagem de dados e definição de uma arquitetura adequada. 
+
+Neste percurso participei de um projeto que consistia em criar um sistema de gerenciamento de equipes ágeis de desenvolvimento e para tal, durante toda fase (da idealização ao desenvolvimento) utilizamos do método ágil, mais especificamente SCRUM e Kanban, chegando a gerar uma publicação de artigo para o mesmo.
+
+Meus maiores interesses e paixões despertados até o momento é muito que se relaciona a dados, principalmente Machine Learning, Data Science e Business Intelligence.
+
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
 
 Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
