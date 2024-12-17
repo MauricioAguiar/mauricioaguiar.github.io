@@ -2,15 +2,15 @@
 layout: about
 title: about
 permalink: /
-subtitle: Address. Contacts. Motto. Etc.
+subtitle: Machine Learning Enthusiast
 
 profile:
   align: right
   image: me_pic_lilac.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>(51) 98131-3987</p>
     <p>Recife, Pernambuco</p>
+    <p>(51) 98131-3987</p>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

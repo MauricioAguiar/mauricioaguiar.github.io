@@ -8,7 +8,6 @@ module ExternalPosts
   class ExternalPostsGenerator < Jekyll::Generator
     safe true
     priority :high
-
     def generate(site)
       if site.config['external_sources'] != nil
         site.config['external_sources'].each do |src|
@@ -79,7 +78,7 @@ module ExternalPosts
       when String
         Time.parse(published_date).utc
       when Date
-        published_date.to_time.utc
+        published_date.in_time_zone.utc
       else
         raise "Invalid date format for #{published_date}"
       end
