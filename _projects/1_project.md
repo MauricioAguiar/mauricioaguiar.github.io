@@ -1,81 +1,77 @@
 ---
 layout: page
-title: project 1
-description: with background image
-img: assets/img/12.jpg
+title: Book Judge
+description: Sentiment Analysis algorithm to determine how good is a book judging only by its cover
+img: assets/img/book-judge_project/proj1-2.png
 importance: 1
-category: work
+category: study
 related_publications: true
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
-
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+  The idea for this project was inspired by the well-known expression, "Don't judge a book by its cover." However, we often unconsciously do this. With this in mind, I decided to create an algorithm using machine learning to detect, crop, and reposition images of books. Then, using {% cite nima %} NIMA (Neural Image Assessment), the algorithm evaluates the quality of the book cover after proper image treatment.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/preoutput.png" title="Image before detection" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
+    This image show the some sample photos taken to be later trained
 </div>
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
+After gathering and labeling some images, I realized my dataset was smaller than desired. To address this, I used data augmentation to increase the dataset size without compromising model training or causing overfitting. This process expanded the dataset from 92 images to over 3,000 variations.<br>
+These images went through two types of training (classification and regression) and then I choose the most suitable model for my project.
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/proj1-1.png" title="Total Loss through batches" 
+        class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/proj1-2.png" title="Total Classification Loss through batches" class="img-fluid rounded z-depth-1" %}
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/proj1-3.png" title="Total Regression Loss through batches" 
+        class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    These graphs show the progress in error reduction during the batches and you can see that classification gave a better result than regression.
+</div>
+
+And from that, this was the result:
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/output.png" title="Image book detection" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    The red square represent the computer vision that detected the book
+</div>
+Just for a test purpose I run this model to detect any book captured with my webcam to see if was even able to detect in a video stream and the result was positive!
+<div class="row justify-content-sm-center">
+    <div class="col-sm-3 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/detection.png" title="Image book detection" class="img-fluid rounded z-depth-1" %}
+    </div>
+        <div class="col-sm-3 mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/book-judge_project/detection-cut.png" title="Image book detection cut" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+
+Then I ran the training for a longer epochs to improve detection and then integrated it with the trained NIMA model to compare and make the "judgment" of the book cover, this was the result:
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/book-judge_project/result.png" title="result image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/book-judge_project/predictedxresult.png" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
+    The left image was the judgment score from 0 to 10 and the right image show to us the expected prediction versus the actual prediction.
 </div>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
+I was very pleased with the results, as it seems to judge elements that are easy to distinguish more accurately; elements that blend together without a precise shape seem to receive a lower score.
+As points for future improvement, the detection could go further and return the real cover with high quality through internet research and then make the judgment. Another point is, since this project was done in 2022, the state of AI was still not very accessible for study or everyday uses, but it would be possible to make a judgment with a more artistic basis rather than purely aesthetic as was the case with this project.
 
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+<p>For more details, visit the <a href="https://github.com/MauricioAguiar/Book-Judge">GitHub repository</a> or check the repositories tab.</p>

@@ -2,33 +2,26 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Machine Learning Enthusiast.
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: me_pic_lilac.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
+    <p>Recife, Pernambuco</p>
+    <p>(51) 98131-3987</p>
+
+news: false # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
 ---
+Sou formado em Análise de Sistemas, com sólida experiência em Back-end, Gestão de Bancos de Dados e Análise de Dados. Durante minha trajetória, projetei soluções de software para problemas específicos, utilizando linguagens como Java, Python e ferramentas de consulta estruturada (SQL). Além disso, domino práticas essenciais para o desenvolvimento de sistemas, incluindo diagramação de classes, modelagem de dados e definição de arquiteturas escaláveis e eficientes.
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Um dos destaques da minha trajetória foi a participação em um projeto desafiador de criação de um sistema para gerenciamento de equipes ágeis de desenvolvimento. Desde a concepção até a entrega, adotamos metodologias ágeis como SCRUM e Kanban, o que culminou na publicação de um artigo científico sobre o projeto.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+Nos últimos anos, desenvolvi uma paixão pela área de Ciência de Dados, onde tenho me dedicado a criar projetos práticos disponíveis no meu [GitHub](https://github.com/MauricioAguiar). Nesses projetos, utilizei tecnologias como PySpark para processamento de grandes volumes de dados, TensorFlow para construção de modelos de Machine Learning e Matplotlib para visualização de dados. Essas experiências me permitiram explorar todo o ciclo de vida dos dados, desde a coleta e limpeza até a análise e aplicação de algoritmos preditivos.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Atualmente estou em busca de oportunidades na área de Ciência de Dados, com foco em Machine Learning, Data Science e Business Intelligence. Meu objetivo é contribuir com soluções inovadoras e impactantes, aproveitando minha experiência prática e o conhecimento adquirido em projetos e tecnologias de ponta.

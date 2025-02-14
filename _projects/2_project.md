@@ -1,81 +1,114 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: Brazilian Sign Language Detection
+description: Using Deep Learning to recognize gestures in LIBRAS (Língua Brasileira de Sinais).
+img: assets/img/signlanguagept-br/mediapipe-detection.png
 importance: 2
-category: work
-giscus_comments: true
+category: study
+related_publications: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+<section id="overview">
+    <h2>Project Overview</h2>
+    <p>This project leverages deep learning techniques to detect and classify hand gestures used in Brazilian Sign Language (LIBRAS). The system processes video streams or images, identifies hand landmarks, and predicts the corresponding gesture using a trained neural network.</p>
+</section>
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<section id="methodology">
+    <h2>Methodology</h2>
+    <ol>
+        <li><strong>Dependencies:</strong> The project uses libraries such as TensorFlow, MediaPipe, OpenCV, and scikit-learn for model training and gesture recognition.</li>
+        <li><strong>Data Preparation:</strong> A dataset of hand gestures is preprocessed and augmented to improve model robustness.</li>
+        <li><strong>Model Training:</strong> A neural network is trained to classify gestures based on extracted features from hand landmarks.</li>
+        <li><strong>Real-Time Detection:</strong> The system integrates with a webcam or video feed to perform real-time gesture recognition.</li>
+    </ol>
+</section>
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<section id="landmark-detection">
+    <h2>Landmark Detection</h2>
+    <p>Using MediaPipe and OpenCV, the system detects hand landmarks in real-time. These landmarks are essential for extracting features used in gesture classification.</p>
+    <div class="row">
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/mediapipe-detection.png" title="Landmark Detection Example" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Example of detected hand landmarks using MediaPipe and OpenCV.</div>
+</section>
+
+<section id="gesture-capture">
+    <h2>Gesture Capture</h2>
+    <p>Captured gestures are saved as input data for model training. Each gesture is labeled and stored in a structured format, ensuring consistency and accuracy during training.</p>
+<!--
+    <div class="row">
+        <img src="assets/img/gesture-capture.png" alt="Gesture Capture Example" class="img-fluid rounded">
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Captured gestures being stored for dataset preparation.</div>
+-->
+</section>
+
+<section id="model-details">
+    <h2>Model Details</h2>
+    <p>The model is built using a Sequential architecture, combining LSTM layers for temporal feature extraction and Dense layers for classification. The following configurations were used:</p>
+    <ul>
+        <li><strong>Optimizer:</strong> Adam</li>
+        <li><strong>Loss Function:</strong> categorical_crossentropy</li>
+        <li><strong>Metrics:</strong> categorical_accuracy</li>
+    </ul>
+    <p>This architecture ensures effective learning of temporal dependencies in the gesture data.</p>
+    <div class="row">
+        <div class="col-sm mt-6 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/summary.png" title="Model Summary" class="img-fluid rounded z-depth-1" %}
+        </div>
     </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+    <div class="caption">Model summary showing total parameters, trainable parameters, and non-trainable parameters.</div>
+    <h3>Training Progress</h3>
+    <p>The model was trained for 537 epochs, achieving convergence in both categorical accuracy and loss reduction:</p>
+    <div class="row">
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/categorical_accuracy.png" title="Categorical Accuracy per Epoch" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Categorical accuracy over epochs.</div>
+        </div>
+        <div class="col-sm mt-3 mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/loss_reduction.png" title="Loss Reduction per Epoch" class="img-fluid rounded z-depth-1" %}
+        <div class="caption">Loss reduction over epochs.</div>
+        </div>        
     </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+</section>
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
 
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+<section id="results">
+    <h2>Results</h2>
+    <p>The model successfully detects and classifies gestures with high accuracy. Below are examples of the detection pipeline for different gestures:</p>
+    <div class="row">
+        <div class="col-sm-3 mt mt-md-0">
+        {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/detection_ola-oi.png" title="Gesture Detection: Oi/Olá" class="img-fluid rounded z-depth-1" %}
+            <div class="caption">Detection of the gesture "Oi/Olá".</div>
+        </div>
+        <div class="col-sm-3 mt mt-md-0">
+            {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/detection_obrigado.png" title="Gesture Detection: Obrigado" class="img-fluid rounded z-depth-1" %}
+            <div class="caption">Detection of the gesture "Obrigado".</div>
+        </div>
+        <div class="col-sm-3 mt mt-md-0">
+            {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/detection_eu-te-amo.png" title="Gesture Detection: Eu te amo" class="img-fluid rounded z-depth-1" %}
+            <div class="caption">Detection of the gesture "Eu te amo".</div>
+        </div>
+        <div class="col-sm-3 mt mt-md-0">
+            {% include figure.liquid loading="eager" path="assets/img/signlanguagept-br/detection_sem-input.png" title="Gesture Detection: Sem Input" class="img-fluid rounded z-depth-1" %}
+            <div class="caption">Detection when no gesture is input ("Sem Input").</div>
+        </div>
     </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
+    <p>Further optimization is ongoing to improve detection speed and accuracy in real-world scenarios.</p>
+</section>
 
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
 
-{% raw %}
+<section id="future-work">
+    <h2>Future Work</h2>
+    <ul>
+        <li>Expand the dataset to include more gestures and variations.</li>
+        <li>Integrate the system into a mobile or web application for broader accessibility.</li>
+        <li>Improve robustness to handle complex backgrounds and lighting conditions.</li>
+    </ul>
+</section>
 
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+<footer>
+        <p>For more details, visit the <a href="https://github.com/MauricioAguiar/SignLanguagePT-BR">GitHub repository</a> or check the repositories tab.</p>
+</footer>
