@@ -67,7 +67,6 @@ images:
         <li><strong>Some values were renamed to more be assertive with the project idea</strong></li>
     </ol>
 </section>
-
 <section id="data_analysis">
     <h2>Data Loading and Initial Exploration</h2>
     <p>The data is loaded into a Pandas DataFrame, and initial exploration is performed to understand the structure and content of the data.</p>
@@ -93,14 +92,15 @@ images:
         <img class="col-sm mt-3 mt-md-0" src="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_by_minXTokens_mean_worked_monthly.png" />
         <div class="caption">Monthly Trends: A bar plot shows the average tokens earned per minute by month.</div>
     </a>
-        <a class="col-sm mt-3 mt-md-0" data-lightbox="data" href="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_by_day_period.png">
+    <a class="col-sm mt-3 mt-md-0" data-lightbox="data" href="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_by_day_period.png">
         <img class="col-sm mt-3 mt-md-0" src="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_by_day_period.png" />
         <div class="caption">Weekly Trends: A bar plot shows the average tokens earned per minute by week.</div>
     </a>
-        <a class="col-sm mt-3 mt-md-0" data-lightbox="data" href="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_mean_by_day_period.png">
+    <a class="col-sm mt-3 mt-md-0" data-lightbox="data" href="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_mean_by_day_period.png">
         <img class="col-sm mt-3 mt-md-0" src="https://raw.githubusercontent.com/MauricioAguiar/mauricioaguiar.github.io/refs/heads/main/assets/img/clientvm/Tokens_gained_mean_by_day_period.png" />
         <div class="caption">Period of the Day: Bar plots show total and average tokens earned by period of the day.</div>
     </a>
+    </div>
 </section>
 <section id="predictive_modeling">
     <h2>Predictive Modeling</h2>

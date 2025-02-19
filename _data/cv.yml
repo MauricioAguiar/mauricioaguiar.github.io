@@ -1,97 +1,88 @@
-- title: General Information
+- title: Informações gerais
   type: map
   contents:
-    - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
-    - name: Languages
-      value: English, German
+    - name: Nome completo
+      value: Maurício de Aguiar Braz
+    - name: Número de telefone
+      value: (51) 98131-3987
+    - name: Email
+      value: aguiarbrazm@gmail.com 
+    - name: Linkedin
+      value: <a href="https://linkedin.com/in/the-mauricio-aguiar">Perfil</a>
 
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
 
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
-
-- title: Academic Interests
-  type: nested_list
-  contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
+- title: Resumo do perfil
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - Habilidade em análise de base de dados relacionais e não-relacionais para tratamento de dados.
+    - Proficiência em criação de dashboards significativos usando Power BI/ Python, a fim de melhorar o entendimento e acessibilidade dos dados a serem exibidos.
+    - Ótimo conhecimento em Excel, SQL, Power BI, proporcionando eficiência em manipulação e análise de dados.
+    - Experiência em análise preditiva usando Machine Learning e Deep Learning através de dados históricos para tomadas de decisões mais assertivas.
+
+- title: Educação
+  type: time_table
+  contents:
+    - title: Análise e desenvolvimento de sistemas
+      institution: Instituto Federal em Ciência e Tecnologia da Paraíba
+      year: 2012 - 2020
+
+- title: Experiência
+  type: time_table
+  contents:
+    - title: Freelance - Analista de dados
+      year: 2024 - Atual 
+      description:
+        - Tratamento de dados para remoção de ruídos, outliers, inconsistências e outros dados inexpressivos a fim de manter a informação 100% precisa com a necessidade dos clientes.
+        - Gerenciamento e aprimorar os dados do cliente através de técnicas de categorização e normalização de dados demonstrando habilidade de solução de problemas na manutenção e integridade dos dados.
+        - Design e entrega de dashboards personalizados para oferecer ao stakeholder insights significativos sobre seu modelo de negócio e ações a serem tomadas baseadas em dados.
+
+    - title: Autônomo - Cientista de dados
+      year: 2023 - 2024
+      description:
+        - Obtenção de dados visuais para pré-processamento e multiplicação de dados (augmentation) para aumentar a robustez do modelo de Deep Learning.
+        - Treinamento de dados usando redes neurais para classificação e extração de features relevantes.
+        - Apresentação dos resultados obtidos em cada etapa e indicação de otimização e melhorias do modelo atual a fim de aperfeiçoamentos futuros.
+
+- title: Projetos
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/MauricioAguiar/Ollama-Home-Assistant">Llama home-assistant</a>
+      year: 2024 - 2025
+      description: Desenvolvi um assistente virtual local utilizando uma GPT personalizável, capaz de processar comandos de forma natural e contextual. O projeto integra processamento de linguagem natural (NLP) com execução local, garantindo privacidade e eficiência na interação com o usuário.
+    - title: <a href="https://github.com/MauricioAguiar/Book-Judge">Book Judge</a>
+      year: 2024 - 2024
+      description: Após a coleta e rotulagem de mais de 3000 imagens, usando Machine Learning por visão computacional o sistema detecta e corta imagens de objetos específicos, para ser classificada por um segundo algoritmo NIMA (Neural Image Assessment) que avalia essas informações retornando um score da imagem exibida de acordo com parâmetros previamente estabelecidos.
+    - title: <a href="https://github.com/MauricioAguiar/SignLanguagePT-BR">SignLanguagePT-BR</a>
+      year: 2022 - 2022
+      description: Através de um processamento de fluxos de vídeo ou imagens o sistema identifica pontos de referência das mãos e prevê o gesto correspondente usando uma rede neural treinada. foram usadas técnicas de Deep Learning onde o há detecção e classificação de diversos gestos manuais usados na Língua Brasileira de Sinais (L.I.B.R.A.S.) em tempo real.
+
+- title: Habilidades Técnicas
+  type: map
+  contents:
+    - name: <strong>Ferramentas de Análises de dados:</strong>
+      value: Excel, Power BI, Matlab
+    - name: <strong>Linguagens de Programação e afins:</strong>
+      value: Python, SQL, C#, Java
+    - name: <strong>Tecnologias/Frameworks:</strong>
+      value: Github, Pandas, NumPy, Tensorflow, Pytorch, Matplotlib, Scikit-learn. 
+
+- title: Principais interesses
+  type: nested_list
+  contents:
+    - title: Machine Learning
+      items:
+        - Sistemas supervisionado de regressão e classificação 
+        - Aprendizado por reforço voltado a robótica e decisões em tempo real
+        - Clusterização para sistemas de recomendações
+        - Criação de modelos preditivos
+    - title: Análise de Dados
+      items:
+        - Tratamento de dados
+        - Análise exploratória dos dados
+        - Criação de dashboards dinâmicos
+
+- title: Línguas
+  type: list
+  contents:
+    - Português (Nativo)
+    - Inglês (Avançado)
