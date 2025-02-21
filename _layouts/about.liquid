@@ -48,6 +48,15 @@ layout: default
       {% include news.liquid limit=true %}
     {% endif %}
 
+    <!-- Certificates -->
+    {% if page.announcements and page.announcements.enabled %}
+      <h2>
+        <a href="{{ '/certificates/' | relative_url }}" style="color: inherit">certificates</a>
+      </h2>
+      {% include certificates.liquid limit=true %}
+    {% endif %}
+
+
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
       <h2>

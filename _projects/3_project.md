@@ -13,8 +13,6 @@ images:
     <h2>Project Overview</h2>
     <p>This project focuses on analyzing data related to an influencer's work in 2024. The goal is to explore the data to identify areas for improvement and create a predictive model to estimate monthly earnings based on hours worked.</p>
 </section>
-
-
 <section id="objective">
     <h2>Objectives</h2>
     <ul>
@@ -23,7 +21,6 @@ images:
         <li><strong>Perform exploratory data analysis to create a predictive model for estimating monthly earnings based on hours worked.</strong></li>
     </ul>
 </section>
-
 <section id="tools">
     <h2>Troughout this project various libraries were used this was the main ones</h2>
     <ul>
@@ -35,7 +32,6 @@ images:
         <li><strong>Prophet </strong>: For time series forecasting.</li>       
     </ul>
 </section>
-
 <section id="data">
     <h3>The data was splitted between to databases one given by the client's website with more direct data and the other one filled by client with more contextual data</h3>
     <p>This were the main data extracted used on this project</p>
@@ -162,9 +158,7 @@ images:
         <li><strong>The analysis was conducted using one year of historical data. With more data, predictions can be refined and extended to longer periods (e.g., bimonthly or quarterly).</strong></li>
         <li><strong>Additional features, such as audience engagement metrics, could improve the predictive model.</strong></li>       
     </ol>
-    <ol>
 </section>
-
 <footer>
         <p>For more details, visit the <a href="https://github.com/MauricioAguiar/SignLanguagePT-BR">GitHub repository</a> or check the repositories tab.</p>
 </footer>
