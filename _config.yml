@@ -7,13 +7,12 @@ first_name: Maurício
 middle_name: de Aguiar
 last_name: Braz
 contact_note: >
-  Gostou do perfil? Entra em contato! Manda um oi em qualquer uma dessas redes acima.
+  Gostou do perfil? Dá uma olhadinha no cv, entra em contato! Manda um oi em qualquer uma dessas redes acima.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Perfil profissional da minha trajetória acadêmica e profissional.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
 keywords: data science, github, git-hub, portfolio, statistics, software developer # add your own keywords or leave empty
 lang: pt-br # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 📈 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -42,7 +41,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout

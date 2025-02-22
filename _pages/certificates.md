@@ -1,8 +1,9 @@
 ---
 layout: page
-title: certificates
+title: Certificados
+nav: true
+nav_order: 5
 permalink: /certificates/
-
 ---
 
 {% include certificates.liquid %}

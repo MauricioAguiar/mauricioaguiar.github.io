@@ -5,9 +5,9 @@ nav: true
 nav_order: 6
 dropdown: true
 children:
-  - title: Certificados
-    permalink: /certificates/
-  - title: divider
-  - title: Notícias
+  - title: Novidades
     permalink: /news/
+  - title: divider
+  - title: Artigos e Referências
+    permalink: /publications/
 ---
