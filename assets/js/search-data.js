@@ -87,7 +87,7 @@ ninja.data = [{
           section: "Certificates",},{id: "certificates-coding-a-chatgpt-style-language-model-from-scratch-in-pytorch",
           title: 'Coding a ChatGPT-style Language Model from Scratch in PyTorch',
           description: "Description of the certificate.",
-          section: "Certificates",},{id: "news-estou-em-busca-de-um-novo-emprego-novas-oportunidades-novos-horizontes-ainda-não-explorados-por-mim-nos-certificados",
+          section: "Certificates",},{id: "news-estou-em-busca-de-um-novo-emprego-novas-oportunidades-novos-horizontes-ainda-não-explorados-por-mim",
           title: 'Estou em busca de um novo emprego, novas oportunidades, novos horizontes ainda não...',
           description: "",
           section: "News",},{id: "news-aperfeiçoando-meu-projeto-na-personalidade-do-assistente-pessoal",
