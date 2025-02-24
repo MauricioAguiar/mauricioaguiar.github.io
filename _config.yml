@@ -9,7 +9,7 @@ last_name: Braz
 contact_note: >
   Gostou do perfil? Dá uma olhadinha no cv, entra em contato! Manda um oi em qualquer uma dessas redes acima.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Perfil profissional da minha trajetória acadêmica e profissional.
+  Perfil da minha trajetória acadêmica e profissional.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
