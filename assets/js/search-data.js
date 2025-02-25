@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-projetos",
           title: "Projetos",
-          description: "A growing collection of my cool projects.",
+          description: "Um coleção crescentes dos meus projetos",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-certificados",
           title: "Certificados",
-          description: "",
+          description: "Certificados relevantes adquiridos na minha trajetória incessante na busca de conhecimentos!",
           section: "Navigation",
           handler: () => {
             window.location.href = "/certificates/";
