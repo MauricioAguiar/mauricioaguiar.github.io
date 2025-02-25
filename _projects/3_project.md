@@ -1,7 +1,7 @@
 ---
 layout: page
-title: 'Data Analysis: Client VM'
-description: Data insights for a client 
+title: "Data Analysis: Client VM"
+description: Data insights for a client
 img: assets/img/clientvm/output.png
 importance: 3
 category: work

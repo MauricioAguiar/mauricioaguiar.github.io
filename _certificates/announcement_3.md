@@ -9,5 +9,5 @@ ct_pdf: Certificado Curso Presencial Power BIAtt.pdf # you can also use external
 inline: true
 related_posts: true
 ---
-PowerBI - Tomando Decisões Baseadas em Dados
 
+PowerBI - Tomando Decisões Baseadas em Dados

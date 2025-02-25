@@ -17,8 +17,8 @@ news: true # includes a list of news items
 certificates: true
 selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
-
 ---
+
 Sou formado em Análise de Sistemas, com sólida experiência em Back-end, Gestão de Bancos de Dados e Análise de Dados. Durante minha trajetória, projetei soluções de software para problemas específicos, utilizando linguagens como Java, Python e ferramentas de consulta estruturada (SQL). Além disso, domino práticas essenciais para o desenvolvimento de sistemas, incluindo diagramação de classes, modelagem de dados e definição de arquiteturas escaláveis e eficientes.
 
 Um dos destaques da minha trajetória foi a participação em um projeto desafiador de criação de um sistema para gerenciamento de equipes ágeis de desenvolvimento. Desde a concepção até a entrega, adotamos metodologias ágeis como SCRUM e Kanban, o que culminou na publicação de um artigo científico sobre o projeto.

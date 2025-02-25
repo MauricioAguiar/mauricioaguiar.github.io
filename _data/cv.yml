@@ -6,10 +6,9 @@
     - name: Número de telefone
       value: (51) 98131-3987
     - name: Email
-      value: aguiarbrazm@gmail.com 
+      value: aguiarbrazm@gmail.com
     - name: Linkedin
       value: <a href="https://linkedin.com/in/the-mauricio-aguiar">Perfil</a>
-
 
 - title: Resumo do perfil
   type: list
@@ -30,7 +29,7 @@
   type: time_table
   contents:
     - title: Freelance - Analista de dados
-      year: 2024 - Atual 
+      year: 2024 - Atual
       description:
         - Tratamento de dados para remoção de ruídos, outliers, inconsistências e outros dados inexpressivos a fim de manter a informação 100% precisa com a necessidade dos clientes.
         - Gerenciamento e aprimorar os dados do cliente através de técnicas de categorização e normalização de dados demonstrando habilidade de solução de problemas na manutenção e integridade dos dados.
@@ -64,14 +63,14 @@
     - name: <strong>Linguagens de Programação e afins:</strong>
       value: Python, SQL, C#, Java
     - name: <strong>Tecnologias/Frameworks:</strong>
-      value: Github, Pandas, NumPy, Tensorflow, Pytorch, Matplotlib, Scikit-learn. 
+      value: Github, Pandas, NumPy, Tensorflow, Pytorch, Matplotlib, Scikit-learn.
 
 - title: Principais interesses
   type: nested_list
   contents:
     - title: Machine Learning
       items:
-        - Sistemas supervisionado de regressão e classificação 
+        - Sistemas supervisionado de regressão e classificação
         - Aprendizado por reforço voltado a robótica e decisões em tempo real
         - Clusterização para sistemas de recomendações
         - Criação de modelos preditivos

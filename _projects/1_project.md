@@ -8,7 +8,7 @@ category: study
 related_publications: true
 ---
 
-  The idea for this project was inspired by the well-known expression, "Don't judge a book by its cover." However, we often unconsciously do this. With this in mind, I decided to create an algorithm using machine learning to detect, crop, and reposition images of books. Then, using {% cite nima %} NIMA (Neural Image Assessment), the algorithm evaluates the quality of the book cover after proper image treatment.
+The idea for this project was inspired by the well-known expression, "Don't judge a book by its cover." However, we often unconsciously do this. With this in mind, I decided to create an algorithm using machine learning to detect, crop, and reposition images of books. Then, using {% cite nima %} NIMA (Neural Image Assessment), the algorithm evaluates the quality of the book cover after proper image treatment.
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
@@ -21,6 +21,7 @@ related_publications: true
 
 After gathering and labeling some images, I realized my dataset was smaller than desired. To address this, I used data augmentation to increase the dataset size without compromising model training or causing overfitting. This process expanded the dataset from 92 images to over 3,000 variations.<br>
 These images went through two types of training (classification and regression) and then I choose the most suitable model for my project.
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/book-judge_project/proj1-1.png" title="Total Loss through batches" 
@@ -39,6 +40,7 @@ These images went through two types of training (classification and regression) 
 </div>
 
 And from that, this was the result:
+
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/book-judge_project/output.png" title="Image book detection" class="img-fluid rounded z-depth-1" %}

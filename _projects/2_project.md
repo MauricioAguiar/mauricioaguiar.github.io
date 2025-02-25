@@ -37,12 +37,6 @@ related_publications: false
 <section id="gesture-capture">
     <h2>Gesture Capture</h2>
     <p>Captured gestures are saved as input data for model training. Each gesture is labeled and stored in a structured format, ensuring consistency and accuracy during training.</p>
-<!--
-    <div class="row">
-        <img src="assets/img/gesture-capture.png" alt="Gesture Capture Example" class="img-fluid rounded">
-    </div>
-    <div class="caption">Captured gestures being stored for dataset preparation.</div>
--->
 </section>
 
 <section id="model-details">
@@ -74,7 +68,6 @@ related_publications: false
     </div>
 </section>
 
-
 <section id="results">
     <h2>Results</h2>
     <p>The model successfully detects and classifies gestures with high accuracy. Below are examples of the detection pipeline for different gestures:</p>
@@ -98,7 +91,6 @@ related_publications: false
     </div>
     <p>Further optimization is ongoing to improve detection speed and accuracy in real-world scenarios.</p>
 </section>
-
 
 <section id="future-work">
     <h2>Future Work</h2>

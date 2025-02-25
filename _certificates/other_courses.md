@@ -9,6 +9,7 @@ related_posts: false
 Demais certificações com relevância em programação
 
 ---
+
 <div>
     <a href ="https://drive.google.com/file/d/1hv8HfWeWP1oTpQEcwuf-hnkF7SNeunvT/view?usp=drive_link">Programação em c#</a>
 </div>
@@ -21,5 +22,3 @@ Demais certificações com relevância em programação
     <a href ="https://drive.google.com/file/d/1iDJAW9qbHSEYrF2vDv_H1J1wEMJeBzgM/view?usp=sharing">Estrutura de dados e algoritmos Java</a>
 </div>
 ---
-
-

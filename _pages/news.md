@@ -1,8 +1,9 @@
 ---
 layout: page
-title: Novidades 
+title: Novidades
 permalink: /news/
 ---
-Pequenos updates da minha jornada 
+
+Pequenos updates da minha jornada
 
 {% include news.liquid %}

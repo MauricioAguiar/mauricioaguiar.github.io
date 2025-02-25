@@ -9,5 +9,5 @@ ct_pdf: Coding a ChatGPT-style Language Model from Scratch in PyTorch.pdf # you 
 inline: true
 related_posts: true
 ---
-Coding a ChatGPT-style Language Model from Scratch in PyTorch
 
+Coding a ChatGPT-style Language Model from Scratch in PyTorch

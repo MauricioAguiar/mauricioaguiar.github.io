@@ -9,4 +9,5 @@ ct_pdf: Certificado Curso Presencial Machine Learning com PythonAtt.pdf # you ca
 inline: true
 related_posts: true
 ---
+
 Machine Learning com Python

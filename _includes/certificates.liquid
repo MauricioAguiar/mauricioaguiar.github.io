@@ -22,18 +22,18 @@
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
                 {% if item.ct_pdf %}
                   <a
-                  {% if item.ct_pdf contains '://' %}
+                    {% if item.ct_pdf contains '://' %}
                       href="{{ item.ct_pdf }}"
-                  {% else %}
+                    {% else %}
                       href="{{ item.ct_pdf | prepend: 'assets/pdf/' | relative_url }}"
-                  {% endif %}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="float-right"
+                    {% endif %}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="float-right"
                   >
-                  <i class="fa-solid fa-file-pdf"></i>
+                    <i class="fa-solid fa-file-pdf"></i>
                   </a>
-              {% endif %}
+                {% endif %}
               {% else %}
                 <a class="certificates-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}

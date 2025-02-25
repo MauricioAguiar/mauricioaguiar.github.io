@@ -1,5 +1,3 @@
-# Meu portifólio profissional 
-
+# Meu portifólio profissional
 
 [Site](https://mauricioaguiar.github.io)
-
